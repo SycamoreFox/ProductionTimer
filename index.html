@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Production Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="main.js"></script>
+
+<body>
+    <div class="titleContainer">
+        <button id="buttonWindowClose" class="titleButton"><i class="material-icons md-18">close</i></button>
+        <button id="buttonWindowMaximize" class="titleButton"><i class="material-icons md-18">fullscreen</i></button>
+        <button id="buttonWindowRestore" class="titleButton"><i class="material-icons md-18">fullscreen_exit</i></button>
+        <button id="buttonWindowMinimize" class="titleButton"><i class="material-icons md-18">arrow_downward</i></button>
+        <div class="title">Production Timer</div>
+    </div>
+    <div class="center">
+        <div class="containerTime">
+            <div class="containerContents">
+                <h1>Current Time</h1>
+                <div class="timeNow" id="timeNow"></div>
+            </div>
+        </div>
+
+        <div id="timerProductionContainer" class="containerProduction">
+            <div class="containerContents">
+                <h1>Production Time:</h1>
+                <button id="buttonProduction" class="buttonAction">Start</button>
+                <button id="buttonProductionReset" class="buttonReset">Reset</button>
+                <div class="stopwatch" id="timerProduction"></div>
+            </div>
+            <div id="footerProduction" class="footerProduction">
+                <div class="footerLabel">Start:</div>
+                <div id="footerProductionStart" class="footerProductionStart">-</div>
+                <div class="footerLabel">Stop:</div>
+                <div id="footerProductionStop" class="footerProductionStop">-</div>
+            </div>
+        </div>
+
+        <div id="timerDowntimeContainer" class="containerDowntime">
+            <div class="containerContents">
+                <h1>Downtime:</h1>
+                <button id="buttonDowntime" class="buttonAction">Start</button>
+                <button id="buttonDowntimeReset" class="buttonReset">Reset</button>
+                <div class="stopwatch" id="timerDowntime"></div>
+            </div>
+            <div id="footerDowntime" class="footerDowntime">
+                <div class="footerLabel">Start:</div>
+                <div id="footerDowntimeStart" class="footerDowntimeStart">-</div>
+                <div class="footerLabel">Stop:</div>
+                <div id="footerDowntimeStop" class="footerDowntimeStop">-</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
